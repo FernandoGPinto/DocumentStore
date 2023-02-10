@@ -1,0 +1,50 @@
+﻿@page "/fileupdate/{StreamId}"
+@attribute [Authorize(Policy = "RequireAdminRole")]
+
+<h1>Update File</h1>
+
+@if (_isLoading)
+{
+    @*Loading Spinner*@
+    <div id="overlay">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="row">
+                <div class="spinner-border text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div class="row">
+                <strong>@_loadingText</strong>
+            </div>
+        </div>
+    </div>
+}
+
+<EditForm Model="@_newFileDescription" OnValidSubmit="@UpdateFile" class="was-validated mt-4">
+    <fieldset>
+        <div class="mb-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="oldfile">File to be Updated</label>
+                </div>
+                <InputText class="form-control-plaintext pl-2" name="oldfile" id="oldfile" readonly @bind-Value="@_oldFileDescription.FileName"></InputText>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="description">Description</label>
+                </div>
+                <InputTextArea rows="3" class="form-control" name="description" id="description" @bind-Value="_newFileDescription.Description" placeholder="Enter a new description (optional)"></InputTextArea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="custom-file">
+                <InputFile OnChange="@OnInputFileChange" class="custom-file-input" id="fileupload" required />
+                <label for="fileupload" class="custom-file-label">@_fileUploadLabel</label>
+                <div class="invalid-feedback">Please choose a new file.</div>
+            </div>
+        </div>
+        <button type="submit" value="Update" id="updateButton" class="btn btn-primary">Update</button>
+    </fieldset>
+</EditForm>

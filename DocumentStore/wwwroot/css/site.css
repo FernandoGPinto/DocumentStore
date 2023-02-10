@@ -1,0 +1,136 @@
+body {
+    min-width: 576px !important;
+}
+
+a, .btn-link {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.content {
+    padding-top: 1.1rem;
+}
+/*
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.validation-message {
+    color: red;
+}*/
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+/* Loading spinner overlay (full screen) */
+#overlay {
+    background: #ffffff;
+    color: #67a641;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 25%;
+    opacity: .80;
+}
+
+/* Panel used to scroll through wide containers */
+.overflow-panel {
+    overflow-x: auto;
+}
+
+/* Additional display size */
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/* Custom background image */
+#wrapper #content-wrapper {
+    background-image: url("../img/background.jpg");
+}
+
+/* Home page picture */
+#front-image {
+    background-image: url("../img/frontimg.jpg");
+    background-size: cover;
+    background-position-x: left;
+    height: 300px;
+    width: 100%;
+}
+
+/* Logo size */
+.logo-large {
+    height: 50px;
+}
+
+.logo-small {
+    height: 50px;
+}
+
+/* Display/hide smaller logo when resizing */
+.sidebar-brand-small {
+    display: inline;
+}
+
+@media (min-width:768px) {
+    .sidebar-brand-small {
+        display: none;
+    }
+}
+
+/* Style the logout button the same as nav links */
+#logout-button {
+    width: 100%;
+    color: #d7d7d7;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+    padding: .75rem 1rem;
+    width: 6.5rem;
+}
+
+@media (min-width: 768px) {
+    #logout-button {
+        width: 100%;
+        color: #d7d7d7;
+        border: none;
+        text-decoration: none;
+        background-color: transparent;
+        display: block;
+        text-align: left;
+        padding: 1rem;
+        width: 12rem;
+    }
+}

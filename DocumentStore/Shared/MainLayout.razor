@@ -1,0 +1,28 @@
+﻿@inherits LayoutComponentBase
+
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div>
+        <NavMenu />
+    </div>
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <h1 style="color: #373839;">Company Documents</h1>
+            </nav>
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+                @Body
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>&copy; 2021 - Fresh - <a href="https://fresh-privacy.com/">Privacy</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>

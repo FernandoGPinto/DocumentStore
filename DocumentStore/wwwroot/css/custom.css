@@ -1,0 +1,490 @@
+﻿/*default.css*/
+/*table
+{
+    border-color:#bad6fe !important;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@400;900&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.border-left-ras {
+    border-left: 0.25rem solid #378A9C !important;
+}
+
+.sidestyle {
+    background: #373839;
+}
+
+.card-header {
+    background: #D2D2D2;
+}
+
+input {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #378A9C;
+    color: #378A9C;
+}
+
+    input:focus {
+        background: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid #378A9C;
+        color: #378A9C;
+        outline: none
+    }
+
+    input:active {
+        outline: none;
+        background: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid #378A9C;
+        color: #378A9C;
+    }
+
+.card-title {
+    color: #378A9C;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cardicon {
+    padding-right: 5px;
+    color: #737275;
+}
+
+h6 {
+    color: #378A9C !important;
+    font-family: 'Roboto Slab', serif !important;
+    font-size: 1.3em !important;
+}
+
+.alertbox {
+    display: table;
+}
+
+.good {
+    color: white;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+    background-color: #67a641;
+}
+
+.bad {
+    color: white;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+    background-color: darkred;
+}
+
+.warn {
+    color: darkred;
+}
+
+/*.active {
+    background: #378A9C !important;
+}*/
+
+.alerttitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8em;
+}
+
+.alertrow {
+    display: table-row;
+}
+
+.filtersbox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #D2D2D2;
+}
+
+.alerticon {
+    display: table-cell;
+    background: #EEDB2E;
+    padding: 10px 10px 10px 10px;
+    font-size: 1em;
+    vertical-align: middle;
+    color: #EEDB2E;
+}
+
+.alerttext {
+    padding: 10px 10px 10px 10px;
+    font-size: 0.7em;
+    display: table-cell;
+    background: #f9f3cc;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #67a641;
+    font-size: 1.8em;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #67a641 !important;
+}
+
+.menuicon {
+    font-size: 1.1em;
+}
+
+.menulink {
+    color: #737274;
+}
+
+.menubox {
+    font-size: 0.9em;
+}
+
+.suppliername {
+    font-family: 'Roboto Slab', serif;
+    color: #373839;
+    font-size: 1.3em;
+}
+
+.pickertitle {
+    /*color: #A03C8E;*/
+    color: #737274;
+    font-size: 1.1em;
+}
+
+.FilterLabel {
+    /*color: #A03C8E;*/
+    color: #737274;
+}
+
+.filterbutton {
+    background: none;
+    border: none;
+    /*color: #A03C8E*/
+    color: #378a9c;
+}
+
+.topfilterbox {
+    width: 100%;
+    /*background: #D2D2D2;*/
+    background: #f9f9f9;
+    color: black;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.bottomfilterbox {
+    width: 100%;
+    /*background: #AFAFAF;*/
+    background: #D2D2D2;
+    color: black;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.figurebox {
+    float: left;
+    width: 15%;
+}
+
+.figuretitle {
+    font-family: 'Roboto Slab', serif;
+    color: #373839;
+    font-size: 1.2em;
+}
+
+.figure {
+    color: #378A9C;
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.figurefooter {
+    color: #737275;
+    font-size: 0.7em;
+}
+
+.chartitle {
+    color: #378A9C;
+    font-size: 1.4em;
+}
+
+.charsubtitle {
+    font-family: 'Roboto Slab', serif;
+    color: #373839;
+    font-size: 1.1em;
+}
+
+h2 {
+    color: #373839;
+    font-size: 1.4em;
+}
+
+#invoverviewTable {
+}
+
+    #invoverviewTable thead {
+        /*  font-family: 'Roboto Slab', serif; */
+        font-weight: normal;
+        color: #373839;
+        font-size: 0.8em;
+    }
+
+    #invoverviewTable th {
+        padding-right: 20px;
+        text-align: center;
+        vertical-align: bottom;
+    }
+
+    #invoverviewTable td {
+        padding-right: 20px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #invoverviewTable td {
+        font-size: 0.7em;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+.tickLabel {
+    font-size: 60%;
+    color: #737275;
+}
+
+#invoverviewTable td:first-child {
+    padding-left: 5px;
+}
+
+.disputetable td {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+/*select {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #378A9C;
+    font-size: .9em;
+    color: #378A9C
+}
+
+    select:focus {
+        outline: none;
+        background: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #378A9C;
+        font-size: .9em;
+        color: #378A9C
+    }
+
+    select:active {
+        outline: none;
+        background: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #378A9C;
+        font-size: .9em;
+        color: #378A9C
+    }*/
+
+.FilterInput {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    font-size: .9em
+}
+
+.FilterSearchContainer {
+    float: left;
+    padding-right: 20px;
+}
+
+.FilterDropDownHandle {
+    width: 75%;
+}
+
+.selectbox {
+    background: #737275;
+}
+
+.menubox div:hover {
+    background: #e1e1e1;
+    border-top: 1px solid #d0d0d0;
+}
+
+.toast-header {
+    background: #67a641;
+}
+
+.aslave {
+    background-color: #373839;
+    color: white;
+}
+
+.querybox {
+    background: #737275;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.queryboxtitle {
+    background: #67a641;
+    padding: 5px;
+}
+
+.rasbox {
+    background: #B29D24;
+}
+
+.customer {
+    background: #A03C8E;
+}
+
+.iconbox {
+    float: left;
+    font-size: 2.5em;
+    margin-right: 5px;
+}
+
+.alert {
+    background: #DA661D;
+    padding: 5px;
+}
+
+/*.btn-primary {
+    background-color: #67a641;
+    border-color: #67a641;
+}
+    .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+        background-color: #B29D24 !important;
+        border-color: #B29D24 !important;
+    }*/
+
+/*.btn-info {
+    background-color: #92C022;
+    border-color: #92C022;
+}
+
+.btn-search {
+    background-color: #36b9cc;
+    border-color: #36b9cc;
+}*/
+
+.btn-gold {
+    background-color: #B29D24;
+    border-color: #B29D24;
+}
+
+.btn-purple {
+    background-color: #A03C8E;
+    border-color: #A03C8E;
+}
+
+.btn-warning {
+    background: #DA661D;
+    border-color: #DA661D;
+    color: white;
+}
+
+
+.aslave h3 {
+    color: white;
+}
+
+.aslave h4 {
+    color: white;
+}
+
+th.ui-state-default {
+    background: #67a641 !important;
+    border-bottom-color: #67a641 !important;
+    color: White !important;
+}
+
+.raised {
+    /*
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 66, 240, 0.5), 0 4px 4px rgba(0, 66, 240, 0.3), 0 0 40px rgba(0, 66, 240, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 66, 240, 0.5), 0 4px 4px rgba(0, 66, 240, 0.3), 0 0 40px rgba(0, 66, 240, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 66, 240, 0.5), 0 4px 4px rgba(0, 66, 240, 0.3), 0 0 40px rgba(0, 66, 240, 0.1) inset;
+*/
+    -webkit-box-shadow: 2px 2px 1px #bad6fe !important;
+    -moz-box-shadow: 2px 2px 1px #bad6fe !important;
+    box-shadow: 2px 2px 1px #bad6fe !important;
+}
+
+/*.table th, .table td {
+    padding: 3px;
+    text-align: left;*/
+    /*border-top: 1px solid #DDD; */
+/*}
+
+table {
+    font-size: 0.9rem !important;
+}*/
+
+a {
+    color: #428bca;
+}
+
+.even {
+}
+
+/*tr:nth-child(odd) {
+    background-color: #D2D2D2;
+}
+
+tr:nth-child(even) {
+    background: white;
+}*/
+
+.even a {
+    /*color: #fff;*/
+}
+
+.customButton1 {
+    color: #FFFFFF;
+    border-color: #bad6fe;
+    background-color: #428bca;
+}
+
+.CustomButtonHov1 {
+    background-color: #01b792;
+}
+
+.imgBtn {
+    display: none !important;
+}
+
+#drpStoreListContainer {
+    display: none;
+}
+
+.DetailRowTable tr th {
+    background-color: #428bca;
+    color: #FFFFFF;
+}
+
+tr.row2 {
+    background-color: #e0ecfe;
+}
